@@ -1,0 +1,35 @@
+{
+    "name": "mauricio-msp/simple-php",
+    "description": "Aplicação simples e rápida com PHP-7",
+    "keywords": ["php-7", "app", "application", "simple", "fast", "small", "micro-framework", "project", "web"],
+    "homepage": "https://github.com/mauricio-msp/simple-php",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+      {
+        "name": "Maurício Porfírio",
+        "email": "mauriciosporfirio@gmail.com",
+        "homepage": "https://about.me/mauricioporfirio",
+        "role": "Creator/Developer"
+      }
+    ],
+    "require": {
+        "php": "^7.0",
+        "php-activerecord/php-activerecord": "^1.2",
+        "lukasdev/drouter": "^2.4",
+        "vlucas/phpdotenv": "^2.4",
+        "twig/twig": "^2.4",
+        "aszone/simple_html_dom": "^1.5",
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+           "app\\": "app/" 
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}

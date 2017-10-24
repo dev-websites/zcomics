@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW,CACP,UAAU,CAAE,IAAI,CAGpB,UAAW,CACP,UAAU,CAAE,MAAM,CAClB,KAAK,CAAE,IAAI",
+"sources": ["../sass/welcome.scss"],
+"names": [],
+"file": "welcome.css"
+}
